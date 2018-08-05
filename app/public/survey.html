@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+
+  <meta charset = "utf-8" />
+  <title>Friend Finder</title>
+  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link href = "https://fonts.googleapis.com/css?family=Pacifico|Quicksand" rel = "stylesheet">
+  <style>
+        body {
+        background-size: 100%;
+        font-family: 'Quicksand', sans-serif;  
+        }
+    
+        .jumbotron {
+          background-color: rgba(0, 0, 0, 0.50);
+          margin-top: 150px;
+        }
+    
+        #header {
+          font-family: 'Pacifico', cursive;
+          text-decoration-color: white;
+        }
+
+        #surveyTron {
+          margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body class = "bgimg" style = "background-image: url(http://s24193.pcdn.co/wp-content/uploads/2017/05/apps-for-making-friends-entity-1320x720.jpg)">
+  
+    <div class = "container">
+
+      <div class="jumbotron" id = "surveyTron">
+
+        <h1 class = "display-4 text-center text-white" id = "header"><span class = "fa fa-facebook-square"></span> Survey Questions</h1>
+        <hr>
+
+        <h4 class = "text-white">Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required="">
+        <h4 class = "text-white">Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required="">
+
+        <h3 class = "text-white"><strong>Question 1</strong></h3>
+        <h4 class = "text-white">Your friend wants to tell you about the dream they had last night. It's probably going to be boring and long. Do you listen to their story?</h4>
+        <select class = "chosen-select" id = "q1">
+            <option value = "1">1 (Strongly Disagree)</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3 class = "text-white"><strong>Question 2</strong></h3>
+        <h4 class = "text-white">It's your friend's birthday. Their only birthday wish is for you to rub a delicious egg custard all over your body. Do you do it?</h4>
+        <select class = "chosen-select" id = "q2">
+            <option value = "1">1 (Strongly Disagree)</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3 class = "text-white"><strong>Question 3</strong></h3>
+        <h4 class = "text-white">Your friend is about to be offered a dream job. But the new boss has one very specific demand. For your friend to get the job, YOU have to punch yourself in the face. Do you punch yourself in the face?</h4>
+        <select class = "chosen-select" id = "q3">
+            <option value = "1">1 (Strongly Disagree)</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3 class = "text-white"><strong>Question 4</strong></h3>
+        <h4 class = "text-white">Your friend is sick and you're bringing medicine. But the only way you can get the medicine is to sit alone in a room with Shia LaBeouf for an hour. Do you sit in that room?  </h4>
+        <select class = "chosen-select" id = "q4">
+            <option value = "1">1 (Strongly Disagree)</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3 class = "text-white"><strong>Question 5</strong></h3>
+        <h4 class = "text-white">You have plans to hang out, but your friend is being guarded by a large angry goose. The only way to get to your friend is to go through the goose. Do you fight that goose?</h4>
+        <select class = "chosen-select" id = "q5">
+            <option value = "1">1 (Strongly Disagree)</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3 class = "text-white"><strong>Question 6</strong></h3>
+        <h4 class = "text-white">Your friend is about to buy 11 gallons of spicy nacho cheese. But they lost their wallet and need you to buy it. Do you ask questions?</h4>
+        <select class = "chosen-select" id = "q6">
+            <option value = "1">1 (Strongly Disagree)</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3 class = "text-white"><strong>Question 7</strong></h3>
+        <h4 class = "text-white">Your friend has been captured by a malicious sea witch. The only way to save them is by wrangling the slippery, ill-tempered sea otters that guard the sea dungeon. Do you wrangle those otters?</h4>
+        <select class = "chosen-select" id = "q7">
+            <option value = "1">1 (Strongly Disagree)</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3 class = "text-white"><strong>Question 8</strong></h3>
+        <h4 class = "text-white">Your friend turns out to be a creature that can only survive by feasting on the souls of the innocent. Do you help your friend find victims to stay alive?</h4>
+        <select class = "chosen-select" id = "q8">
+            <option value = "1">1 (Strongly Disagree)</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3 class = "text-white"><strong>Question 9</strong></h3>
+        <h4 class = "text-white">Question goes here?</h4>
+        <select class = "chosen-select" id = "q9">
+            <option value = "1">1 (Strongly Disagree)</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+
+        <h3 class = "text-white"><strong>Question 10</strong></h3>
+        <h4 class = "text-white">Question goes here?</h4>
+        <select class = "chosen-select" id = "q10">
+            <option value = "1">1 (Strongly Disagree)</option>
+            <option value = "2">2</option>
+            <option value = "3">3</option>
+            <option value = "4">4</option>
+            <option value = "5">5 (Strongly Agree)</option>
+        </select>
+        <hr>
+    
+        <div class="text-center">
+          <a href="/submit"><button class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> Submit</button></a>
+        </div>
+
+      </div>
+    
+      <footer class="footer">
+        <div class="container">
+          <hr>
+          <p><a class = "text-white" href="/api/tables">API Friends List</a> | <a class = "text-white" href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a></p>
+        </div>
+      </footer>
+    
+    </div>
+
+</body>
+
+</html>
